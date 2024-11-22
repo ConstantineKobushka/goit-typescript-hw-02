@@ -40,7 +40,10 @@ function App() {
     errorMessage: '',
   });
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
-  const [modalData, setModalData] = useState<ModalData>({});
+  const [modalData, setModalData] = useState<ModalData>({
+    urlRegular: '',
+    altDescr: '',
+  });
 
   useEffect(() => {
     if (!query) return;
